@@ -96,7 +96,7 @@ class _MarketScreenState extends State<MarketScreen> with SingleTickerProviderSt
   }
 
   List<StockItem> get _gainers => _filteredMarket.where((s) => s.isGain).toList();
-  List<StockItem> get _losers => _filteredMarket.where((s) => !s.isGain).toList();
+
 
   @override
   Widget build(BuildContext context) {
