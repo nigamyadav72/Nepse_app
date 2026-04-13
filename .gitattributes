@@ -1,0 +1,12 @@
+# Override GitHub Linguist to show Dart as the primary language
+
+# Mark platform-specific directories as vendor (ignored by Linguist)
+windows/** linguist-vendored
+linux/** linguist-vendored
+macos/** linguist-vendored
+android/** linguist-vendored
+ios/** linguist-vendored
+
+# Ensure Dart files are detected
+*.dart linguist-detectable
+*.dart linguist-language=Dart
