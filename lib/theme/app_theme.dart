@@ -92,7 +92,7 @@ class AppTheme {
         ),
         iconTheme: const IconThemeData(color: textSecondary),
       ),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: card,
         elevation: 0,
         shape: RoundedRectangleBorder(
@@ -108,7 +108,7 @@ class AppTheme {
         type: BottomNavigationBarType.fixed,
         elevation: 0,
       ),
-      tabBarTheme: TabBarTheme(
+      tabBarTheme: TabBarThemeData(
         labelColor: textPrimary,
         unselectedLabelColor: textTertiary,
         indicatorColor: primary,
