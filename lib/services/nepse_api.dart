@@ -6,7 +6,7 @@ import '../models/nepse_index.dart';
 import '../models/company.dart';
 
 class NepseApiService {
-  static const String baseUrl = 'https://nepseapi.surajrimal.dev';
+  static const String baseUrl = 'http://10.0.2.2:8000';
   static const Duration timeout = Duration(seconds: 15);
 
   static final NepseApiService _instance = NepseApiService._internal();

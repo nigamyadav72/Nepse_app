@@ -4,6 +4,7 @@ import '../theme/app_theme.dart';
 import 'dashboard_screen.dart';
 import 'market_screen.dart';
 import 'search_screen.dart';
+import 'portfolio_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -17,6 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   final List<Widget> _screens = const [
     DashboardScreen(),
+    PortfolioScreen(),
     MarketScreen(),
     SearchScreen(),
   ];
@@ -61,10 +63,18 @@ class _HomeScreenState extends State<HomeScreen> {
                 onTap: (i) => setState(() => _currentIndex = i),
               ),
               _NavItem(
+                icon: Icons.pie_chart_outline_rounded,
+                activeIcon: Icons.pie_chart_rounded,
+                label: 'Portfolio',
+                index: 1,
+                currentIndex: _currentIndex,
+                onTap: (i) => setState(() => _currentIndex = i),
+              ),
+              _NavItem(
                 icon: Icons.candlestick_chart_outlined,
                 activeIcon: Icons.candlestick_chart_rounded,
                 label: 'Market',
-                index: 1,
+                index: 2,
                 currentIndex: _currentIndex,
                 onTap: (i) => setState(() => _currentIndex = i),
               ),
@@ -72,7 +82,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 icon: Icons.search_rounded,
                 activeIcon: Icons.search_rounded,
                 label: 'Companies',
-                index: 2,
+                index: 3,
                 currentIndex: _currentIndex,
                 onTap: (i) => setState(() => _currentIndex = i),
               ),
